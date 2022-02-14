@@ -13,21 +13,22 @@
 <body>
     <main class="full-height-center">
         <div class="card shadow-lg p-3 m-3 rounded card-style">
-            <div class="card-body" onclick="changeMainBackgroundColor(1, 'green')">
-                <div class="mb-3">
-                    <label for="exampleFormControlTextarea1" class="form-label">Cantidad de caracteres: </label>
-                    <h1><span class="badge bg-secondary">0</span></h1>
+            <div class="card-body">
+                <div>
+                    <label for="exampleFormControlTextarea1" class="form-label">Contador de caracteres: </label>
+                    <h1><span id="counter" class="badge bg-secondary">0</span></h1>
                   </div>
             </div>
         </div>
         <div class="card shadow-lg p-3 m-3 rounded card-style">
-            <div class="card-body" onclick="changeMainBackgroundColor(1, 'green')">
-                <div class="mb-3">
+            <div class="card-body">
+                <div>
                     <label for="exampleFormControlTextarea1" class="form-label">Ingrese un texto</label>
-                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                    <textarea oninput="characterCounter()" id="text-area" class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
                 </div>
             </div>
         </div>
     </main>
+    <script src="./js/index.js"></script>
 </body>
 </html>

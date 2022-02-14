@@ -1,0 +1,1 @@
+const characterCounter = () => document.getElementById("counter").textContent = document.getElementById("text-area").value.length
