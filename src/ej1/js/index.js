@@ -1,3 +1,11 @@
+/**
+ * Ejercicio 1:
+ * Crear un documento html con 3 cuadrados que, al ser clickeados, cambien el color de fondo del documento.
+ * Cada cuadrado debera tener un color distinto.
+ * @param {Number} id
+ * @param {String} color 
+ */
+
 const changeMainBackgroundColor = (id, color) => {
     const main = document.getElementById("main");
     switch (id) {
